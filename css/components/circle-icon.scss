@@ -1,0 +1,27 @@
+@import "../color";
+
+.circle-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  bottom: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  //   &:hover {
+  //     animation: movingIcon linear 0.5s infinite;
+  //   }
+}
+
+// @keyframes movingIcon {
+//   0% {
+//     bottom: 3.2rem;
+//   }
+//   100% {
+//     bottom: 2.8rem;
+//   }
+// }

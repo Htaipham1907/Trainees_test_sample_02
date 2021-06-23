@@ -1,0 +1,15 @@
+@import "../color";
+
+.btn {
+  background: transparent;
+  border: 1px solid $gray;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  min-width: 16rem;
+  min-height: 4rem;
+  &:hover {
+    background-color: $orange;
+    transition: linear 0.2s;
+  }
+}
