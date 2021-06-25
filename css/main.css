@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 html {
   font-size: 62.5%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 68%;
+  width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -23,10 +23,9 @@ body {
 
 header {
   height: 100vh;
-  background: linear-gradient(rgba(59, 67, 76, 0.8), rgba(59, 67, 76, 0.8)), url("../../img/header_background.png");
+  background: linear-gradient(rgba(65, 72, 78, 0.9), rgba(65, 72, 78, 0.9)), url("../../img/header_background.jpg");
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,12 +34,12 @@ header {
 }
 header .header-menu {
   position: absolute;
-  top: 1.6rem;
+  top: 3.2rem;
   display: flex;
   justify-content: space-between;
-  width: 70%;
   color: white;
-  font-size: 3rem;
+  font-size: 1.6rem;
+  width: 70%;
 }
 header .header-menu .logo span {
   color: #f61;
@@ -54,22 +53,21 @@ header .header-menu .menu-group > * {
   margin: 0 0.5rem;
 }
 header .header-menu .menu-group span {
-  background: pink;
   font-size: 1.6rem;
   padding: 0;
-  height: fit-content;
 }
 header .header-heading-text {
-  font-size: 8rem;
+  font-size: 6rem;
   text-transform: uppercase;
   color: white;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 header .header-heading-text span {
   color: #f61;
 }
 header .header-content-text {
-  width: 68%;
+  width: 65%;
   text-align: center;
   color: #fff;
   margin-bottom: 4.8rem;
@@ -77,13 +75,20 @@ header .header-content-text {
 header .header-button-group {
   text-align: center;
 }
-header .header-button-group .btn.header-btn {
+header .header-button-group .header-btn {
+  min-width: 20rem;
+  max-height: 5rem;
+  font-size: 1.6rem;
   margin: 0 1rem;
+}
+header .header-button-group .header-btn:nth-child(2) {
+  border: 1px solid #9da1a5;
+  background: transparent;
 }
 
 footer {
   height: 5rem;
-  background: #445;
+  background: #41484e;
   display: flex;
   align-items: center;
   height: 8rem;
@@ -97,23 +102,22 @@ footer .container.footer-container {
 }
 
 .btn {
-  background: transparent;
-  border: 1px solid #9da1a5;
+  background: #f61;
+  border: none;
   color: white;
   text-transform: uppercase;
   border-radius: 1rem;
   min-width: 16rem;
-  min-height: 4rem;
+  min-height: 5rem;
 }
 .btn:hover {
-  background-color: #f61;
-  transition: linear 0.2s;
+  cursor: pointer;
 }
 
 .circle-icon {
   width: 3.2rem;
   height: 3.2rem;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 50%;
   background: transparent;
   position: absolute;
@@ -123,9 +127,133 @@ footer .container.footer-container {
   align-items: center;
   color: white;
 }
+.circle-icon:hover {
+  cursor: pointer;
+}
 
 section {
-  min-height: 10rem;
+  padding: 10rem 0 10rem 0;
+}
+
+.about-section {
+  text-align: center;
+}
+.about-section .about-section-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0 1.5rem;
+}
+.about-section .about-section-container .design-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  flex: calc(20% - 3rem);
+}
+.about-section .about-section-container .design-list .print-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9da1a5;
+  min-width: 15rem;
+  min-height: 15rem;
+  border-radius: 50%;
+}
+.about-section .about-section-container .design-list .print-icon img {
+  width: fit-content;
+}
+.about-section .about-section-container .design-list .design-list-heading {
+  margin: 3rem 0;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}
+.about-section .about-section-container .design-list .design-list-text {
+  max-width: 17rem;
+}
+
+.subscribe-section {
+  background: linear-gradient(rgba(65, 72, 78, 0.9), rgba(65, 72, 78, 0.9)), url("../../img/subscribe_section_background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.subscribe-section .subscribe-section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+.subscribe-section .subscribe-section-container .subscribe-input {
+  height: 5rem;
+  padding: 0 2.3rem;
+  border-radius: 1rem;
+  border: none;
+  width: 56rem;
+  outline: none;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+}
+.subscribe-section .subscribe-section-container .subscribe-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  padding: 0 9rem;
+}
+
+.work-section img {
+  width: 100%;
+  height: auto;
+}
+.work-section .work-heading {
+  text-transform: uppercase;
+}
+.work-section .work-heading span {
+  color: #f61;
+}
+.work-section .work-image-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.work-section .work-image-area .single-image {
+  width: 36rem;
+  height: 36rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.work-section .work-image-area .single-image.imac-image {
+  background: url(../../img/work_imac.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.work-section .work-image-area .single-image.office-image {
+  background: url(../../img/work_office.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.work-section .work-image-area .single-image.business-image {
+  background: url(../../img/work_business.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.work-section .work-image-area .single-image.ipad-image {
+  background: url(../../img/work_ipad.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.work-section .work-image-area .single-image.technology-image {
+  background: url(../../img/work_technology.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.work-section .work-image-area .single-image.macbook-image {
+  background: url(../../img/work_macbook.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=main.css.map */

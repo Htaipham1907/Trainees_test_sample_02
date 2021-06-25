@@ -2,11 +2,10 @@
 
 header {
   height: 100vh;
-  background: linear-gradient(rgba(59, 67, 76, 0.8), rgba(59, 67, 76, 0.8)),
-    url("../../img/header_background.png");
+  background: linear-gradient(rgba(65, 72, 78, 0.9), rgba(65, 72, 78, 0.9)),
+    url("../../img/header_background.jpg");
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,12 +13,12 @@ header {
   position: relative;
   .header-menu {
     position: absolute;
-    top: 1.6rem;
+    top: 3.2rem;
     display: flex;
     justify-content: space-between;
-    width: 70%;
     color: white;
-    font-size: 3rem;
+    font-size: 1.6rem;
+    width: 70%;
     .logo {
       span {
         color: $orange;
@@ -33,34 +32,38 @@ header {
         margin: 0 0.5rem;
       }
       span {
-        background: pink;
         font-size: 1.6rem;
         padding: 0;
-        height: fit-content;
       }
     }
   }
   .header-heading-text {
-    font-size: 8rem;
+    font-size: 6rem;
     text-transform: uppercase;
     color: white;
     text-align: center;
+    font-family: "Open Sans", sans-serif;
     span {
       color: $orange;
     }
   }
   .header-content-text {
-    width: 68%;
+    width: 65%;
     text-align: center;
     color: $white;
     margin-bottom: 4.8rem;
   }
   .header-button-group {
     text-align: center;
-    .btn {
-      &.header-btn {
-        margin: 0 1rem;
+    .header-btn {
+      min-width: 20rem;
+      max-height: 5rem;
+      font-size: 1.6rem;
+      &:nth-child(2) {
+        border: 1px solid $gray;
+        background: transparent;
       }
+      margin: 0 1rem;
     }
   }
 }

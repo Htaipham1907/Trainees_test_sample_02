@@ -8,6 +8,9 @@
     <link 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
       rel="stylesheet"  type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,13 +18,12 @@
             <div class="header-menu">
                 <p class="logo">Tanatos<span>Studio</span></p>
                 <div class="menu-group">
-                    <!-- <label>Menu</label> -->
                     <span>Menu</span><i class="fas fa-bars"></i>
                 </div>
             </div>
-            <h1 class="header-heading-text">we design <span>things</span></h1>
+            <h1 class="header-heading-text"><strong>we design <span>things</strong></h1>
             <p class="header-content-text">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores ratione pariatur, earum vero esse nesciunt consequuntur non accusamus.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Dolores ratione pariatur, earum vero esse nesciunt consequuntur non accusamus.
             </p>   
             <div class="header-button-group">
                 <button class="btn header-btn">
@@ -38,50 +40,64 @@
 
     </header>
     <section class="about-section">
-      <div class="container">
-          <div class="desgn-list design-print">
-            <img src="" alt="print-design">
-            <p>Print Design</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          </div>
-          <div class="design-list design-web">
-            <img src="" alt="web-design">
-            <p>Print Design</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          </div>
-          <div class="design-list design-app">
-            <img src="" alt="app-design">
-            <p>Print Design</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          </div>
-          <div class="design-list design-logo">
-            <img src="" alt="logo-design">
-            <p>Print Design</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          </div>
+      <div class="container about-section-container">
+        <div class="design-list design-print">
+            <div class="print-icon">
+                <img src="./img/print_icon.png" alt="print-icon">
+            </div>
+            <p class="design-list-heading"><strong>print design</strong></p>
+            <p class="design-list-text">Deleniti similique omnis mollitia iure praesentium quisquam.</p>
+        </div>
+        <div class="design-list design-web">
+            <div class="print-icon">
+                <img src="./img/web_icon.png" alt="print-icon">
+            </div>
+            <p class="design-list-heading"><strong>web design</strong></p>
+            <p class="design-list-text">Deleniti similique omnis mollitia iure praesentium quisquam.</p>
+        </div>
+        <div class="design-list design-app">
+            <div class="print-icon">
+                <img src="./img/app_icon.png" alt="print-icon">
+            </div>
+            <p class="design-list-heading"><strong>app design</strong></p>
+            <p class="design-list-text">Deleniti similique omnis mollitia iure praesentium quisquam.</p>
+        </div>
+        <div class="design-list design-logo">
+            <div class="print-icon">
+                <img src="./img/logo_icon.png" alt="print-icon">
+            </div>
+            <p class="design-list-heading"><strong>logo design</strong></p>
+            <p class="design-list-text">Deleniti similique omnis mollitia iure praesentium quisquam.</p>
+        </div>
       </div>
     </section>
 
 
 
     <section class="subscribe-section">
-        <div class="container">
-            <input type="text">
-            <button>subscribe</button>
+        <div class="container subscribe-section-container">
+            <input type="text" class="subscribe-input" placeholder="Enter your email address">
+            <button class="btn subscribe-button">subscribe</button>
         </div>
     </section>
 
+    
     <section class="work-section">
         <div class="container">
-            <h2 class="work-heading">our work</h2>
+            <h2 class="work-heading">our <span>work</span></h2>
             <p class="work-text">Nam ducimus aperiam incidunt minus sed autem consectetur distinctio ea nemo obcaecati.</p>
-            <div class="work-img-list">
-                <img src="" alt="work-image">
+            <div class="work-image-area">
+                <div class="single-image imac-image"></div>
+                <div class="single-image office-image"></div>
+                <div class="single-image business-image"></div>
+                <div class="single-image ipad-image"></div>
+                <div class="single-image technology-image"></div>
+                <div class="single-image macbook-image"></div>
             </div>
         </div>
     </section>
 
-
+    <!--
 
     <section class="feedback-section">
         <div class="container">
@@ -133,7 +149,7 @@
                 </div>
             </form>
         </div>
-    </section>
+    </section> -->
 
 
 

@@ -1,3 +1,121 @@
 section {
-  min-height: 10rem;
+  padding: 10rem 0 10rem 0;
+}
+
+.about-section {
+  text-align: center;
+  .about-section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 0 1.5rem;
+    .design-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      flex: calc(20% - 3rem);
+      .print-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $gray;
+        min-width: 15rem;
+        min-height: 15rem;
+        border-radius: 50%;
+        img {
+          width: fit-content;
+        }
+      }
+      .design-list-heading {
+        margin: 3rem 0;
+        font-size: 2.1rem;
+        text-transform: uppercase;
+      }
+      .design-list-text {
+        max-width: 17rem;
+      }
+    }
+  }
+}
+
+.subscribe-section {
+  background: linear-gradient(rgba(65, 72, 78, 0.9), rgba(65, 72, 78, 0.9)),
+    url("../../img/subscribe_section_background.jpg");
+  background-size: cover;
+  background-position: center;
+  .subscribe-section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    .subscribe-input {
+      height: 5rem;
+      padding: 0 2.3rem;
+      border-radius: 1rem;
+      border: none;
+      width: 56rem;
+      outline: none;
+      font-size: 1.6rem;
+      font-family: "Open Sans", sans-serif;
+    }
+    .subscribe-button {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.6rem;
+      padding: 0 9rem;
+    }
+  }
+}
+
+@mixin backgroundChanging($url) {
+  background: $url;
+  background-size: cover;
+  background-position: center;
+}
+
+.work-section {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .work-heading {
+    text-transform: uppercase;
+    span {
+      color: $orange;
+    }
+  }
+  .work-image-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .single-image {
+      width: 36rem;
+      height: 36rem;
+      border-radius: 1rem;
+      gap: 1rem;
+      margin: 1rem 0;
+      &.imac-image {
+        @include backgroundChanging(url(../../img/work_imac.jpg));
+      }
+      &.office-image {
+        @include backgroundChanging(url(../../img/work_office.jpg));
+      }
+      &.business-image {
+        @include backgroundChanging(url(../../img/work_business.jpg));
+      }
+      &.ipad-image {
+        @include backgroundChanging(url(../../img/work_ipad.jpg));
+      }
+      &.technology-image {
+        @include backgroundChanging(url(../../img/work_technology.jpg));
+      }
+      &.macbook-image {
+        @include backgroundChanging(url(../../img/work_macbook.jpg));
+      }
+    }
+  }
 }
