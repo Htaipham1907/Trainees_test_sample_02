@@ -11,12 +11,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="./js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
+    <script>
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
     <header>
         <div class="container">
             <div class="header-menu">
-                <p class="logo">Tanatos<span>Studio</span></p>
+                <img class="header-logo" src="./img/Logo.png" alt="main-logo">
                 <div class="menu-group">
                     <span>Menu</span><i class="fas fa-bars"></i>
                 </div>
@@ -42,29 +60,29 @@
     <section class="about-section">
       <div class="container about-section-container">
         <div class="design-list design-print">
-            <div class="print-icon">
-                <img src="./img/print_icon.png" alt="print-icon">
+            <div class="design-icon">
+                <img class="design-img" src="./img/print_icon.png" alt="print-icon">
             </div>
             <p class="design-list-heading"><strong>print design</strong></p>
             <p class="design-list-text">Deleniti similique omnis mollitia iure praesentium quisquam.</p>
         </div>
         <div class="design-list design-web">
-            <div class="print-icon">
-                <img src="./img/web_icon.png" alt="print-icon">
+            <div class="design-icon">
+                <img class="design-img" src="./img/web_icon.png" alt="print-icon">
             </div>
             <p class="design-list-heading"><strong>web design</strong></p>
             <p class="design-list-text">Deleniti similique omnis mollitia iure praesentium quisquam.</p>
         </div>
         <div class="design-list design-app">
-            <div class="print-icon">
-                <img src="./img/app_icon.png" alt="print-icon">
+            <div class="design-icon">
+                <img class="design-img" src="./img/app_icon.png" alt="print-icon">
             </div>
             <p class="design-list-heading"><strong>app design</strong></p>
             <p class="design-list-text">Deleniti similique omnis mollitia iure praesentium quisquam.</p>
         </div>
         <div class="design-list design-logo">
-            <div class="print-icon">
-                <img src="./img/logo_icon.png" alt="print-icon">
+            <div class="design-icon">
+                <img class="design-img" src="./img/logo_icon.png" alt="print-icon">
             </div>
             <p class="design-list-heading"><strong>logo design</strong></p>
             <p class="design-list-text">Deleniti similique omnis mollitia iure praesentium quisquam.</p>
@@ -85,51 +103,154 @@
     <section class="work-section">
         <div class="container">
             <h2 class="work-heading">our <span>work</span></h2>
-            <p class="work-text">Nam ducimus aperiam incidunt minus sed autem consectetur distinctio ea nemo obcaecati.</p>
+            <p class="work-text">Nam ducimus aperiam incidunt minus sed autem consectetur distinctio ea nemo obcaecati. Error, enim facere! Placeat accusamus, quam dolores veritatis maiores voluptate id, maxime, iusto vitae suscipit voluptatibus rerum dolor reprehenderit animi eligendi! Modi?</p>
             <div class="work-image-area">
-                <div class="single-image imac-image"></div>
-                <div class="single-image office-image"></div>
-                <div class="single-image business-image"></div>
-                <div class="single-image ipad-image"></div>
-                <div class="single-image technology-image"></div>
-                <div class="single-image macbook-image"></div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_imac.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_office.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_business.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_ipad.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_technology.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_macbook.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
             </div>
+
+
+
+            <div class="work-image-area" style="display:none">
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_imac.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_office.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_business.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_ipad.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_technology.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+                <div class="single-image">
+                    <img class="work-img" src="./img/work_macbook.jpg" alt="">
+                    <div class="single-image-content">
+                        <h3 class="single-image-heading">abazoo website</h3>
+                        <p class="single-image-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                        <button class="btn single-image-btn">show project</button>
+                    </div>
+                </div>
+            </div>
+            <button class="btn work-btn" onClick="showMoreImage()">show more</button>
         </div>
     </section>
 
-    <!--
+    
 
     <section class="feedback-section">
-        <div class="container">
-            <img src="" alt="feedback-person-image" class="feedback-img">
-            <p class="feedback-text">Reprehenderit, molestias magni velit dolore blanditiis ratione aliquid?</p>
+        <div class="container feedback-container">
+            <div class="arrow-slide left-arrow">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="arrow-slide right-arrow">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <img src="./img/people_feedback.png" alt="feedback-person-image" class="feedback-img">
+            <p class="feedback-text">These guys are incredible! I get my project in 10 days and it was awesome!
+                <br>Very good service! Highly recommended!
+            </p>
             <p class="feedback-name">John Smith</p>
         </div>
     </section>
 
+    
 
-
-    <section class="team-section">
+    <!-- <section class="team-section">
         <div class="container">
             <h2>our team</h2>
             <p>Dolor illum quas iste quidem ducimus. Eveniet ea ad, necessitatibus nisi iure id 
                 animi odio culpa mollitia voluptas excepturi optio ducimus. Sequi.
             </p>
-            <div class="people-list">
-                <div class="person">
-                    <p>catherina gai</p>
+            <div class="members-list">
+                <div class="member">
+                    <p id="member-name"></p>
                     <div class="list-icon">
-                        <i class="fas fa-times"></i>
-                        <i class="fas fa-times"></i>
-                        <i class="fas fa-times"></i>
+                        <i class="fas fa-times f-icon"></i>
+                        <i class="fas fa-times t-icon"></i>
+                        <i class="fas fa-times g-icon"></i>
                     </div>
-                    <p class="people-description">Accusamus maiores laudantium debitis dignissimos? 
+                    <p class="member-description">Accusamus maiores laudantium debitis dignissimos? 
                         Amet sapiente iure nobis corporis odio molestiae alias.</p>
                 </div>
             </div>
         </div>
-    </section>
-
+    </section> 
 
     <section class="contact-section">
         <div class="container">
@@ -149,9 +270,9 @@
                 </div>
             </form>
         </div>
-    </section> -->
+    </section> 
 
-
+    -->
 
     <footer>
         <div class="container footer-container">

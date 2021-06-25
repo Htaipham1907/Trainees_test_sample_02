@@ -2,8 +2,7 @@
 
 header {
   height: 100vh;
-  background: linear-gradient(rgba(65, 72, 78, 0.9), rgba(65, 72, 78, 0.9)),
-    url("../../img/header_background.jpg");
+  @include linear_background("../../img/header_background.jpg");
   background-position: center;
   background-size: 100%;
   display: flex;
@@ -18,11 +17,10 @@ header {
     justify-content: space-between;
     color: white;
     font-size: 1.6rem;
-    width: 70%;
-    .logo {
-      span {
-        color: $orange;
-      }
+    width: 80%;
+    .header-logo {
+      width: 15.8rem;
+      height: 1.8rem;
     }
     .menu-group {
       display: flex;
@@ -38,7 +36,7 @@ header {
     }
   }
   .header-heading-text {
-    font-size: 6rem;
+    font-size: 7rem;
     text-transform: uppercase;
     color: white;
     text-align: center;
@@ -48,7 +46,8 @@ header {
     }
   }
   .header-content-text {
-    width: 65%;
+    width: 70%;
+    font-size: 2.5rem;
     text-align: center;
     color: $white;
     margin-bottom: 4.8rem;
@@ -63,7 +62,7 @@ header {
         border: 1px solid $gray;
         background: transparent;
       }
-      margin: 0 1rem;
+      margin: 0 2.7rem;
     }
   }
 }
