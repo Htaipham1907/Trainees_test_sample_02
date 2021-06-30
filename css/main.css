@@ -28,7 +28,7 @@ img {
 
 header {
   height: 100vh;
-  background: linear-gradient(rgba(65, 72, 78, 0.4), rgba(65, 72, 78, 0.4)), linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../img/header_background.jpg");
+  background: linear-gradient(rgba(65, 72, 78, 0.4), rgba(65, 72, 78, 0.4)), linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../img/header_background.jpg);
   background-position: center;
   background-size: 100%;
   display: flex;
@@ -67,7 +67,6 @@ header .header-heading-text {
   text-transform: uppercase;
   color: white;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
 }
 header .header-heading-text span {
   color: #f61;
@@ -107,6 +106,9 @@ footer .container.footer-container {
   color: white;
   text-transform: uppercase;
 }
+footer .container.footer-container .column-right span {
+  color: red;
+}
 
 .btn {
   background: #f61;
@@ -138,6 +140,9 @@ footer .container.footer-container {
 }
 .circle-icon:hover {
   cursor: pointer;
+}
+.circle-icon a {
+  color: white;
 }
 
 section {
@@ -315,6 +320,273 @@ section {
 .feedback-section .feedback-container .right-arrow:active {
   transform: translate(0.5rem, -50%);
   transition: transform linear 0.1s;
+}
+
+.team-section .team-heading {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+.team-section .team-heading span {
+  color: #f61;
+}
+.team-section .team-describe {
+  width: 40%;
+  height: 8.3rem;
+  overflow: hidden;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 3rem;
+  margin-top: 1.53rem;
+}
+.team-section .members-list {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  margin-top: 9.86rem;
+  gap: 1rem;
+}
+.team-section .members-list .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-basis: 25%;
+}
+.team-section .members-list .member .img-header .member-img {
+  width: 100%;
+  filter: grayscale(100%);
+  border-radius: 1rem;
+}
+.team-section .members-list .member .img-header .member-img:hover {
+  filter: none;
+  transform: scale(1.1);
+  transform-origin: bottom;
+  transition: transform linear 0.2s;
+  cursor: pointer;
+}
+.team-section .members-list .member .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-section .members-list .member .card-body .member-name {
+  text-transform: uppercase;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+.team-section .members-list .member .card-body .list-icon {
+  margin: 2.7rem 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.team-section .members-list .member .card-body .list-icon a {
+  color: white;
+  text-decoration: none;
+}
+.team-section .members-list .member .card-body .list-icon a i {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.team-section .members-list .member .card-body .member-description {
+  font-size: 1.4rem;
+}
+
+.contact-section {
+  color: #fff;
+  background: linear-gradient(rgba(65, 72, 78, 0.4), rgba(65, 72, 78, 0.4)), linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../../img/contact_background.jpg");
+}
+.contact-section .contact-heading {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+.contact-section .contact-heading span {
+  color: #f61;
+}
+.contact-section .contact-describe {
+  width: 40%;
+  height: 8.3rem;
+  overflow: hidden;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.contact-section .contact-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.contact-section .contact-form .input-email,
+.contact-section .contact-form .input-subject {
+  flex-basis: calc(100% / 2 - 1.5rem);
+  padding: 2rem;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 1rem;
+  border: none;
+}
+.contact-section .contact-form .text-message {
+  flex-basis: 100%;
+  max-width: 100%;
+  max-height: 20rem;
+  min-height: 20rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 1rem;
+  border: none;
+}
+.contact-section .contact-form .button-and-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.contact-section .contact-form .button-and-icons .icons-group {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+}
+.contact-section .contact-form .button-and-icons .icons-group .icon a {
+  text-decoration: none;
+}
+.contact-section .contact-form .button-and-icons .icons-group .icon a i {
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 4.3rem;
+  height: 4.3rem;
+}
+
+.f-icon {
+  background: #3c5b9b;
+}
+
+.t-icon {
+  background: #2daae1;
+}
+
+.g-icon {
+  background: #f63d27;
+  color: white;
+}
+
+.b-icon {
+  background: #2d9ad2;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 100%;
+  }
+
+  header .header-heading-text {
+    font-size: 4rem;
+  }
+  header .header-content-text {
+    font-size: 1.6rem;
+  }
+  header .header-button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .team-section .team-describe {
+    width: 80%;
+  }
+  .team-section .members-list {
+    width: 80%;
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .subscribe-section .subscribe-section-container {
+    flex-direction: column;
+  }
+  .subscribe-section .subscribe-section-container .subscribe-input {
+    width: 100%;
+  }
+
+  .contact-section .contact-describe {
+    width: 80%;
+  }
+  .contact-section .contact-form {
+    width: 100%;
+    margin-top: 1.6rem;
+  }
+  .contact-section .contact-form .input-email,
+.contact-section .contact-form .input-subject {
+    flex-basis: 100%;
+  }
+  .contact-section .contact-form .button-and-icons {
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+  .about-section .about-section-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  .about-section .about-section-container .design-list {
+    flex-basis: 30%;
+  }
+
+  .team-section .team-describe {
+    width: 90%;
+  }
+  .team-section .members-list {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .team-section .members-list .member {
+    flex-basis: calc(100% / 2 - 1.5rem);
+  }
+  .team-section .members-list .member .img-header .member-img:hover {
+    transform: scale(1.05);
+  }
+
+  .work-section .work-text {
+    width: 90%;
+  }
+  .work-section .work-image-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .work-section .work-image-area .single-image {
+    flex-basis: calc(100% / 2 - 0.5rem);
+  }
+
+  .contact-section .contact-describe {
+    width: 90%;
+  }
+  .contact-section .contact-form {
+    margin-top: 3.2rem;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1152px) {
+  .about-section .about-section-container {
+    gap: 1rem;
+  }
+  .about-section .about-section-container .design-list {
+    flex-basis: calc(100% / 4 - 1rem);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

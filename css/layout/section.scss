@@ -68,12 +68,6 @@ section {
   }
 }
 
-@mixin backgroundChanging($url) {
-  background: $url;
-  background-size: cover;
-  background-position: center;
-}
-
 .work-section {
   .work-heading {
     text-transform: uppercase;
@@ -181,4 +175,175 @@ section {
       }
     }
   }
+}
+
+.team-section {
+  .team-heading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    span {
+      color: $orange;
+    }
+  }
+  .team-describe {
+    width: 40%;
+    height: 8.3rem;
+    overflow: hidden;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 1.53rem;
+  }
+  .members-list {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    margin-top: 9.86rem;
+    gap: 1rem;
+    .member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex-basis: 25%;
+      .img-header {
+        .member-img {
+          width: 100%;
+          filter: grayscale(100%);
+          border-radius: 1rem;
+          &:hover {
+            filter: none;
+            transform: scale(1.1);
+            transform-origin: bottom;
+            transition: transform linear 0.2s;
+            cursor: pointer;
+          }
+        }
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // opacity: 0.5;
+        .member-name {
+          text-transform: uppercase;
+          margin-top: 2rem;
+          font-size: 2.5rem;
+        }
+        .list-icon {
+          margin: 2.7rem 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+          a {
+            color: white;
+            text-decoration: none;
+            i {
+              width: 2.4rem;
+              height: 2.4rem;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+            }
+          }
+        }
+        .member-description {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+.contact-section {
+  color: $white;
+  @include linear_background("../../img/contact_background.jpg");
+  .contact-heading {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    span {
+      color: $orange;
+    }
+  }
+  .contact-describe {
+    width: 40%;
+    height: 8.3rem;
+    overflow: hidden;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+    .input-email,
+    .input-subject {
+      flex-basis: calc(100% / 2 - 1.5rem);
+      padding: 2rem;
+      font-size: 1.5rem;
+      outline: none;
+      border-radius: 1rem;
+      border: none;
+    }
+    .text-message {
+      flex-basis: 100%;
+      max-width: 100%;
+      max-height: 20rem;
+      min-height: 20rem;
+      padding: 2rem;
+      font-size: 1.5rem;
+      outline: none;
+      border-radius: 1rem;
+      border: none;
+    }
+    .button-and-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      .icons-group {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 1rem;
+        .icon {
+          a {
+            text-decoration: none;
+            i {
+              color: $white;
+              border-radius: 50%;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              width: 4.3rem;
+              height: 4.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.f-icon {
+  background: $facebook;
+}
+
+.t-icon {
+  background: $twitter;
+}
+
+.g-icon {
+  background: $google;
+  color: white;
+}
+
+.b-icon {
+  background: $be;
 }

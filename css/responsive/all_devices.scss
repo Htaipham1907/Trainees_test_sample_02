@@ -1,0 +1,10 @@
+@media screen and(min-width: 991px) and (max-width: 1152px) {
+  .about-section {
+    .about-section-container {
+      gap: 1rem;
+      .design-list {
+        flex-basis: calc(100% / 4 - 1rem);
+      }
+    }
+  }
+}

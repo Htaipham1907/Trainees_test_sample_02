@@ -2,7 +2,9 @@
 
 header {
   height: 100vh;
-  @include linear_background("../../img/header_background.jpg");
+  background: linear-gradient(rgba(65, 72, 78, 0.4), rgba(65, 72, 78, 0.4)),
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../../img/header_background.jpg);
   background-position: center;
   background-size: 100%;
   display: flex;
@@ -40,7 +42,6 @@ header {
     text-transform: uppercase;
     color: white;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
     span {
       color: $orange;
     }

@@ -13,6 +13,11 @@ footer {
       justify-content: space-between;
       color: white;
       text-transform: uppercase;
+      .column-right {
+        span {
+          color: red;
+        }
+      }
     }
   }
 }

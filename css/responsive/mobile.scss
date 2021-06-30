@@ -1,0 +1,57 @@
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 100%;
+  }
+  header {
+    .header-heading-text {
+      font-size: 4rem;
+    }
+    .header-content-text {
+      font-size: 1.6rem;
+    }
+    .header-button-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  .team-section {
+    .team-describe {
+      width: 80%;
+    }
+    .members-list {
+      width: 80%;
+      flex-direction: column;
+      gap: 8rem;
+    }
+  }
+
+  .subscribe-section {
+    .subscribe-section-container {
+      flex-direction: column;
+      .subscribe-input {
+        width: 100%;
+      }
+    }
+  }
+
+  .contact-section {
+    .contact-describe {
+      width: 80%;
+    }
+    .contact-form {
+      width: 100%;
+      margin-top: 1.6rem;
+      .input-email,
+      .input-subject {
+        flex-basis: 100%;
+      }
+      .button-and-icons {
+        flex-direction: column;
+        gap: 3.2rem;
+        align-items: center;
+      }
+    }
+  }
+}
