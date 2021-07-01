@@ -19,7 +19,7 @@ img {
 }
 
 .container {
-  width: 93%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -81,13 +81,13 @@ header .header-content-text {
 header .header-button-group {
   text-align: center;
 }
-header .header-button-group .header-btn {
+header .header-button-group a .header-btn {
   min-width: 20rem;
   max-height: 5rem;
   font-size: 1.6rem;
   margin: 0 2.7rem;
 }
-header .header-button-group .header-btn:nth-child(2) {
+header .header-button-group a:nth-child(2) .header-btn {
   border: 1px solid #9da1a5;
   background: transparent;
 }
@@ -123,6 +123,7 @@ footer .container.footer-container .column-right span {
 }
 .btn:hover {
   cursor: pointer;
+  opacity: 0.9;
 }
 
 .circle-icon {
@@ -538,15 +539,6 @@ section {
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 990px) {
-  .about-section .about-section-container {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-  }
-  .about-section .about-section-container .design-list {
-    flex-basis: 30%;
-  }
-
   .team-section .team-describe {
     width: 90%;
   }
