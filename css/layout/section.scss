@@ -43,6 +43,9 @@ section {
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
+    .subscribe-section-heading {
+      display: none;
+    }
     .subscribe-input {
       height: 5rem;
       padding: 0 2.3rem;
@@ -141,6 +144,9 @@ section {
   color: white;
   .feedback-container {
     position: relative;
+    .feedback-heading {
+      display: none;
+    }
     .feedback-text {
       margin: 4rem 0;
       text-align: center;

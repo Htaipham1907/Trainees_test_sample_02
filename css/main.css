@@ -193,6 +193,9 @@ section {
   justify-content: center;
   gap: 3rem;
 }
+.subscribe-section .subscribe-section-container .subscribe-section-heading {
+  display: none;
+}
 .subscribe-section .subscribe-section-container .subscribe-input {
   height: 5rem;
   padding: 0 2.3rem;
@@ -288,6 +291,9 @@ section {
 }
 .feedback-section .feedback-container {
   position: relative;
+}
+.feedback-section .feedback-container .feedback-heading {
+  display: none;
 }
 .feedback-section .feedback-container .feedback-text {
   margin: 4rem 0;
