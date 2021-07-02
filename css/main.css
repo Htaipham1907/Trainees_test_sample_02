@@ -81,13 +81,13 @@ header .header-content-text {
 header .header-button-group {
   text-align: center;
 }
-header .header-button-group a .header-btn {
+header .header-button-group .header-btn {
   min-width: 20rem;
   max-height: 5rem;
   font-size: 1.6rem;
   margin: 0 2.7rem;
 }
-header .header-button-group a:nth-child(2) .header-btn {
+header .header-button-group .header-btn:nth-child(2) {
   border: 1px solid #9da1a5;
   background: transparent;
 }

@@ -55,18 +55,14 @@ header {
   }
   .header-button-group {
     text-align: center;
-    a {
-      .header-btn {
-        min-width: 20rem;
-        max-height: 5rem;
-        font-size: 1.6rem;
-        margin: 0 2.7rem;
-      }
+    .header-btn {
+      min-width: 20rem;
+      max-height: 5rem;
+      font-size: 1.6rem;
+      margin: 0 2.7rem;
       &:nth-child(2) {
-        .header-btn {
-          border: 1px solid $gray;
-          background: transparent;
-        }
+        border: 1px solid $gray;
+        background: transparent;
       }
     }
   }
